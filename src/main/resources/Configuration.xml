@@ -3,20 +3,21 @@
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases> 
-        <typeAlias alias="User" type="com.umetrip.mybatis.MybatisInAction.model.User"/> 
+        <typeAlias alias="User" type="com.umetrip.mybatis.MybatisInAction.model.User"/>
+        <typeAlias alias="Article" type="com.umetrip.mybatis.MybatisInAction.model.Article"/>  
     </typeAliases> 
 
-    <environments default="development">
+   <!--  <environments default="development">
         <environment id="development">
         <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
             <property name="driver" value="com.mysql.jdbc.Driver"/>
-            <property name="url" value="jdbc:mysql://localhost/Test" />
+            <property name="url" value="jdbc:mysql://localhost/Test?useUnicode=true&amp;characterEncoding=utf8" />
             <property name="username" value="wangsijie"/>
             <property name="password" value="123"/>
             </dataSource>
         </environment>
-    </environments>
+    </environments> -->
     
     <mappers>
         <mapper resource="com/umetrip/mybatis/MybatisInAction/model/User.xml"/>

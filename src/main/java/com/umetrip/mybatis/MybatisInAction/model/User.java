@@ -21,10 +21,10 @@ package com.umetrip.mybatis.MybatisInAction.model;
 
  */
 public class User {
-	int id;
-	int age;
-	String name;
-	String address;
+	private int id;
+	private int age;
+	private String name;
+	private String address;
 	
 	public int getId() {
 		return id;
@@ -54,7 +54,7 @@ public class User {
 	@Override
 	public String toString() {
 		return new StringBuilder().append("[").append("id=").append(id)
-				.append(";name=").append(name).append(";age").append(age)
-				.append(";address").append(address).append("]").toString();
+				.append(";name=").append(name).append(";age=").append(age)
+				.append(";address=").append(address).append("]").toString();
 	}
 }
